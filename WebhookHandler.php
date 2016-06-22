@@ -188,7 +188,7 @@ class WebhookHandler extends Base
         $event = array(
             'project_id' => $this->project_id,
             'reference' => $issue['id'],
-            'title' => $issue['title'],
+            'title' => $project['namespace'] . ' | ' . $issue['title'],
             'description' => $description,
         );
 
